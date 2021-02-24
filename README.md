@@ -11,7 +11,7 @@ As the Firebase token is sensitive info, you must save it in a [GitHub secret](h
 
 A simple workload using this action would be something like:
 
-````  
+````
 on: [push]
 name: Publish blog
 jobs:
@@ -21,7 +21,7 @@ jobs:
     - uses: actions/checkout@v1
       with:
         submodules: true
-    - uses: pulimento/github-action-hugo-deploy-to-firebase@master
+    - uses: YanhaoYang/github-action-hugo-deploy-to-firebase@master
       with:
         firebase-token: ${{ secrets.secret_firebase_token }}
         alias: ${{ some_alias }} // OPTIONAL

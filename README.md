@@ -24,7 +24,6 @@ jobs:
     - uses: YanhaoYang/github-action-hugo-deploy-to-firebase@master
       with:
         firebase-token: ${{ secrets.secret_firebase_token }}
-        alias: ${{ some_alias }} // OPTIONAL
 ````
 
 Happy hacking!
